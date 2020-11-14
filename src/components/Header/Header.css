@@ -5,7 +5,8 @@ header {
 
 .bg-img {
     background-image: url('../../assets/images/cleaning.jpg');
-    min-height: 1000px;
+    height: 950px;
+    width: 100%;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,7 +40,8 @@ h1 {
 
 @media(max-width: 500px) {
     .bg-img {
-        width: 400px;
+        width: 380px;
+        height: 820px;
         background-position: center center;
         background-attachment: fixed;
     }
