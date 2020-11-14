@@ -40,7 +40,7 @@ h1 {
 
 @media(max-width: 500px) {
     .bg-img {
-        width: 380px;
+        width: 400px;
         height: 820px;
         background-position: center center;
         background-attachment: fixed;
