@@ -1,3 +1,20 @@
 h1 {
-    font-family: 'Goldman', cursive;
+    font-family: 'Marck Script', cursive;
+    word-spacing: 4px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 12px;
+    word-spacing: 4px;
 }
