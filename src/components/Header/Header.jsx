@@ -1,9 +1,12 @@
 import React from 'react';
+import './Header.css';
 
 const Header = () => {
     return (
         <header>
-            <h1 style={{textAlign: 'center'}}>AN Janitorial Service</h1>
+            <nav>
+                <h1>AN Janitorial Service</h1>
+            </nav>
         </header>
     );
 };
