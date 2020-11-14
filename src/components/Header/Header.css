@@ -1,12 +1,28 @@
-h1 {
-    font-family: 'Marck Script', cursive;
-    word-spacing: 4px;
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-img {
+    background-image: url('../../assets/images/cleaning.jpg');
+    min-height: 1000px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .navigation {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+h1 {
+    font-family: 'Marck Script', cursive;
+    word-spacing: 4px;
+    color: white;
+    text-shadow: 1px 1px 2px gray;
 }
 
 .nav-links {
@@ -17,4 +33,21 @@ h1 {
 .nav-links li {
     margin: 0 12px;
     word-spacing: 4px;
+    color: white;
+    text-shadow: 1px 1px 2px gray;
+}
+
+@media(max-width: 500px) {
+    .bg-img {
+        width: 400px;
+        background-position: center;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+
+    .nav-links li{
+        display: none;
+    }
 }

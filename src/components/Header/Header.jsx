@@ -3,7 +3,7 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <header>
+        <div className='bg-img'>
             <nav className='navigation'>
                 <h1>AN Janitorial Service</h1>
                 <ul className='nav-links'>
@@ -13,7 +13,7 @@ const Header = () => {
                     <li><i className="fas fa-phone-alt"></i> (510)913-5091</li>         
                 </ul>
             </nav>
-        </header>
+        </div>
     );
 };
 
