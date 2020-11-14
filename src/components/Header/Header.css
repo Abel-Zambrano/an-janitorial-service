@@ -39,8 +39,9 @@ h1 {
 
 @media(max-width: 500px) {
     .bg-img {
-        width: 450px;
-        background-position: center;
+        width: 400px;
+        background-position: center center;
+        background-attachment: fixed;
     }
 
     .navigation {
