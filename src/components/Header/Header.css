@@ -3,27 +3,17 @@ header {
     padding: 0;
 }
 
-.bg-img {
-    background-image: url('../../assets/images/cleaning.jpg');
-    height: 950px;
-    width: 100%;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
 .navigation {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: rgb(56, 56, 216);
 }
 
 h1 {
     font-family: 'Marck Script', cursive;
     word-spacing: 4px;
     color: white;
-    text-shadow: 1px 1px 2px gray;
 }
 
 .nav-links {
@@ -32,25 +22,7 @@ h1 {
 }
 
 .nav-links li {
-    margin: 0 12px;
+    margin: 0 16px;
     word-spacing: 4px;
     color: white;
-    text-shadow: 1px 1px 2px gray;
-}
-
-@media(max-width: 500px) {
-    .bg-img {
-        width: 400px;
-        height: 820px;
-        background-position: center center;
-        background-attachment: fixed;
-    }
-
-    .navigation {
-        justify-content: center;
-    }
-
-    .nav-links li{
-        display: none;
-    }
 }
