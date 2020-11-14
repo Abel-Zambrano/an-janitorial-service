@@ -39,7 +39,7 @@ h1 {
 
 @media(max-width: 500px) {
     .bg-img {
-        width: 400px;
+        width: 450px;
         background-position: center;
     }
 
