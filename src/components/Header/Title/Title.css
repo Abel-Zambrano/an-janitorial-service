@@ -2,4 +2,17 @@
     font-family: 'Marck Script', cursive;
     word-spacing: 4px;
     color: white;
+    font-weight: 300;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
 }
+
+#Name {
+    font-family: 'Goldman', cursive;
+    color: white;
+}
+
+/* font-family: 'Goldman', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Nunito', sans-serif; */

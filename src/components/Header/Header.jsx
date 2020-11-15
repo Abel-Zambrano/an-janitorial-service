@@ -1,19 +1,13 @@
 import React from 'react';
 import Title from './Title/Title';
+import NavigationItems from './Navigation/NavigationItems/NavigationItems';
 import './Header.css';
 
 const Header = () => {
     return (
-        <header>
-            <nav className='navigation'>
-                <Title />
-                <ul className='nav-links'>
-                    <li>HOME</li>     
-                    <li>ABOUT</li>     
-                    <li>SERVICES</li>          
-                    <li><i className="fas fa-phone-alt"></i> (510)913-5091</li>         
-                </ul>
-            </nav>
+        <header className='navigation'>
+            <Title />
+            <NavigationItems />              
         </header>
     );
 };

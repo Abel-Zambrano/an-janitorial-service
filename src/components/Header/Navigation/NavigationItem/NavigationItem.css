@@ -1,0 +1,9 @@
+.NavigationItem {
+    margin: 10px 16px;
+    box-sizing: border-box;
+    width: 100%;
+    list-style: none;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    word-spacing: 10px;
+}

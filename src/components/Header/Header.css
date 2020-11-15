@@ -4,24 +4,3 @@
     align-items: center;
     background-color: rgb(56, 56, 216);
 }
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin: 0 16px;
-    word-spacing: 4px;
-    color: white;
-}
-
-@media (max-width: 500px) {
-    .navigation {
-        justify-content: center;
-    }
-    
-    .nav-links li {
-        display: none;
-    }
-}
