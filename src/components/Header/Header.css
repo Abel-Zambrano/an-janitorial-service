@@ -5,12 +5,6 @@
     background-color: rgb(56, 56, 216);
 }
 
-h1 {
-    font-family: 'Marck Script', cursive;
-    word-spacing: 4px;
-    color: white;
-}
-
 .nav-links {
     display: flex;
     list-style: none;

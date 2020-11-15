@@ -1,11 +1,12 @@
 import React from 'react';
+import Title from './Title/Title';
 import './Header.css';
 
 const Header = () => {
     return (
         <header>
             <nav className='navigation'>
-                <h1>AN Janitorial Service</h1>
+                <Title />
                 <ul className='nav-links'>
                     <li>HOME</li>     
                     <li>ABOUT</li>     
