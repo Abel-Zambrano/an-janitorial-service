@@ -1,11 +1,11 @@
 import React from 'react';
 import './Center.css';
-import backgroundPic from '../../assets/images/janitor_cleaning.jpg';
+import office from '../../assets/images/office.jpg';
 
 
 const Center = () => {
     return (
-        <img className='intro-pic' src={backgroundPic} alt=""/>
+        <img className='bg-pic' src={office} alt="office"/>
     );
 };
 

@@ -1,16 +1,13 @@
 .Title {
-    font-family: 'Marck Script', cursive;
+    font-family: 'Goldman', cursive;
     word-spacing: 4px;
     color: white;
-    font-weight: 300;
-    font-size: larger;
-    margin: 0;
-    padding: 0;
+    font-weight: 200;
+    font-size: 16px;
 }
 
-#Name {
-    font-family: 'Goldman', cursive;
-    color: white;
+#phone {
+    font-size: 12px;
 }
 
 /* font-family: 'Goldman', cursive;
