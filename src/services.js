@@ -34,7 +34,7 @@ const services = [
         name: 'Pressure Washing',
         img: 'https://live.staticflickr.com/65535/50607876956_f388cac25d_o.png',
         description: 'Pressure Washing'
-    },
+    }
 ]
 
 export default services;

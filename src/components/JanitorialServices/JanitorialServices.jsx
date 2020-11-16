@@ -1,11 +1,12 @@
 import React from 'react';
+import './JanitorialServices.css'
 import JanitorialService from './JanitorialService/JanitorialService';
 
-const JanitorialServices = (props) => {
+const JanitorialServices = () => {
     return (
-        <ul>
+        <>
             <JanitorialService />
-        </ul>
+        </>
     );
 };
 

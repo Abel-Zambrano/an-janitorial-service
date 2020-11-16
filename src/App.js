@@ -9,7 +9,9 @@ function App() {
     <div className="App">
       <Header />
       <Center />
-      <JanitorialServices />
+      <div className='service-container'>
+        <JanitorialServices />
+      </div>
       <Footer />
     </div>
   );

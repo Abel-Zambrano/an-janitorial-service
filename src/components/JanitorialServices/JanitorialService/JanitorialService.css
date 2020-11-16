@@ -1,5 +1,6 @@
 .js-list {
-    list-style: none;
+    box-sizing: border-box;
+    width: 200px;
 }
 
 .service-icon {

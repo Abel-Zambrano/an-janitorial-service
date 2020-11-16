@@ -1,3 +1,10 @@
 .App {
   text-align: center;
 }
+
+.service-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 80px;    
+  justify-content: center;
+}
