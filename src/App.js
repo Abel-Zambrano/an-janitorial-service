@@ -9,6 +9,9 @@ function App() {
     <div className="App">
       <Header />
       <Center />
+      <div className='our-services'>
+          <h2>Our Services</h2>
+      </div>
       <div className='service-container'>
         <JanitorialServices />
       </div>
