@@ -21,10 +21,6 @@ and (min-width: 375px) and (max-width: 700px){
     #phone {
         font-size: 10px;
     }
-
-    .title-div {
-        margin-right: 3rem;
-    }
 }
 
 /* font-family: 'Goldman', cursive;
