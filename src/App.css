@@ -10,7 +10,7 @@
 .service-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 80px;    
+  grid-gap: 200px;    
   justify-content: center;
 }
 
