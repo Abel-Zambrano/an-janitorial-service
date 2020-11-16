@@ -16,10 +16,6 @@
 
 @media only screen 
 and (min-width: 375px) and (max-width: 700px) {
-  .our-services {
-    margin: 0;
-    padding: 0;
-  }
 
   .service-container {
     grid-template-columns: auto;
