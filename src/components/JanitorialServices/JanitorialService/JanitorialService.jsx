@@ -1,14 +1,21 @@
 import React from 'react';
 import './JanitorialService.css';
-import cleaning from '../../../assets/icons/cleaning.png';
+import services from '../../../services';
+
 
 const JanitorialService = () => {
     return (
         <li className='js-list'>
             <div>
                 <h2>Our Services</h2>
-                <img className='cleaning-icon' src={cleaning} alt="cleaning" />
-                <p>Cleaning Office and Commercial Facilities.</p>
+                {services.map((service) => {
+                    return (
+                        <div key={service.id}>
+                            <img className='service-icon' src={service.img} alt={service.name} />
+                            <p>{service.description}</p>
+                        </div>
+                    )
+                })}
             </div>
         </li>
     );
