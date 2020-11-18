@@ -1,6 +1,7 @@
 import React from 'react';
 import './JanitorialService.css';
 import services from '../../../services';
+import FadeInSection from '../../../UI/FadeInSection/FadeInSection';
 
 
 const JanitorialService = () => {
@@ -8,10 +9,12 @@ const JanitorialService = () => {
         <>
             {services.map((service) => {
                 return (
-                    <div className='js-list' key={service.id}>
-                        <img className='service-icon' src={service.img} alt={service.name} />
-                        <p>{service.description}</p>
-                    </div>
+                    <FadeInSection key={service.id}>
+                        <div className='js-list'>
+                            <img className='service-icon' src={service.img} alt={service.name} />
+                            <p>{service.description}</p>
+                        </div>
+                    </FadeInSection>
                 );
             })}
         </>

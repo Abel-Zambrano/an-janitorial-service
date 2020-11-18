@@ -3,7 +3,7 @@ const services = [
         id: 1,
         name: 'Cleaning',
         img: 'https://live.staticflickr.com/65535/50607993817_7e9303afd5_o.png',
-        description: 'Cleaning Office and Commercial Facilities'
+        description: 'Commercial Cleaning'
     },
     {
         id: 2,
