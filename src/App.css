@@ -19,5 +19,6 @@ and (min-width: 375px) and (max-width: 700px) {
 
   .service-container {
     grid-template-columns: auto;
+    margin-top: 14rem;
   }
 }
