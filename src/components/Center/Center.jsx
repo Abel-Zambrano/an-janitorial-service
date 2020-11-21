@@ -1,8 +1,5 @@
 import React from 'react';
 import './Center.css';
-import office from '../../assets/images/bg-an.jpeg';
-
-
 
 const Center = () => {
     return (
