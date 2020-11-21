@@ -1,12 +1,12 @@
 .bg-pic {
     width: 100%;
-    height: 850px;
+    height: 950px;
+    object-fit: cover;
     background-attachment: fixed;
-    filter: brightness(70%)
 }
 
 .bg-info {
-    margin-top: 10rem;
+    margin-top: 2rem;
     font-size: 4rem;
     color: white;
 }
