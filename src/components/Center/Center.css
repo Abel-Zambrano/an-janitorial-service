@@ -1,10 +1,11 @@
 .bg-pic {
     background-image: url('https://live.staticflickr.com/65535/50630796327_6bf58e00a9_k.jpg');
     width: 100%;
-    height: 950px;
+    height: 1000px;
     object-fit: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .bg-info {
@@ -15,7 +16,6 @@
 @media only screen 
 and (min-width: 375px) and (max-width: 700px) {
     .bg-pic {
-        background-attachment: fixed;
         background-size: cover;
         height: 400px;
     }
