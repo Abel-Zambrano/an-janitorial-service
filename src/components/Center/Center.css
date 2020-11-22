@@ -18,6 +18,7 @@ and (min-device-width: 375px) and (max-width: 700px) {
     .bg-pic {
         height: 650px;
         object-fit: contain;
+        background-size: contain;
     }
 
     .bg-info {
