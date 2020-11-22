@@ -49,6 +49,7 @@
 
 .arrow {
     color: white;
+    opacity: 75%;
     position: absolute;
     bottom: 0;
     left: 50%;
