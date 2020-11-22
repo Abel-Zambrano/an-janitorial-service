@@ -26,6 +26,7 @@ and (min-device-width: 375px) and (max-width: 1000px) {
     }
 
     .bg-info {
+        display: block;
         padding-top: 1rem;
         font-size: 2rem;
         color: white;
