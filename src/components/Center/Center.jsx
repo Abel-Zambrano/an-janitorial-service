@@ -6,7 +6,7 @@ const Center = () => {
     return (
         <div>
             <div className='bg-pic'>
-                <div className='bg-info'><i class="fas fa-map-marker-alt"></i> SF Bay Area</div>
+                <div className='bg-info'><i className="fas fa-map-marker-alt"></i> SF Bay Area</div>
                 <BouncingArrow className='arrow' />
             </div>
         </div>    
