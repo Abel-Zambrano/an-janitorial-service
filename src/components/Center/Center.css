@@ -2,10 +2,10 @@
     background-image: url('https://live.staticflickr.com/65535/50630796327_6bf58e00a9_k.jpg');
     width: 100%;
     height: 1000px;
-    object-fit: cover;
+    /* object-fit: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .bg-info {
@@ -17,9 +17,11 @@
 and (min-device-width: 375px) and (max-width: 700px) {
     .bg-pic {
         height: 650px;
-        object-fit: none;
-        background-size: none;
+        /* object-fit: none;
+        /* background-size: none; */
         background-position: center;
+        background-size: 1400px; 
+        background-repeat: no-repeat;
     }
 
     .bg-info {
