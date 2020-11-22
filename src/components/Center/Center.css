@@ -34,6 +34,7 @@ and (min-device-width: 375px) and (max-width: 1000px) {
 
     .arrow {
         display: block;
-        margin-bottom: 7rem;
+        z-index: 100px;
+        margin-bottom: 10rem;
       }
 }
