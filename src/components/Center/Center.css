@@ -13,10 +13,10 @@
     color: white;
 }
 
-@media only screen 
+/* @media only screen 
 and (min-width: 375px) and (max-width: 700px) {
     .bg-pic {
-        background-size: cover;
+        width: 400px;
         height: 400px;
     }
-}
+} */
