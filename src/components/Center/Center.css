@@ -19,6 +19,7 @@ and (min-device-width: 375px) and (max-width: 700px) {
         height: 650px;
         object-fit: none;
         background-size: none;
+        background-position: center;
     }
 
     .bg-info {
