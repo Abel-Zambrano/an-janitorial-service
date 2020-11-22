@@ -10,7 +10,7 @@
 
 .bg-info {
     padding-top: 1rem;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
 }
 
@@ -22,11 +22,11 @@ and (min-device-width: 375px) and (max-width: 700px) {
         /* background-size: none; */
         background-position: center;
         background-size: 1400px; 
-        background-repeat: no-repeat;
+        /* /* background-repeat: no-repeat; */
     }
 
     .bg-info {
-        margin-top: 0rem;
+        /* margin-top: 0rem; */
         font-size: 2rem;
     }
 }
