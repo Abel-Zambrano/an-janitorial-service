@@ -21,6 +21,7 @@ and (min-device-width: 375px) and (max-width: 700px) {
     }
 
     .bg-info {
+        padding-top: 1rem;
         font-size: 2rem;
     }
 }
