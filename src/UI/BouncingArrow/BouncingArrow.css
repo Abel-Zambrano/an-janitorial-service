@@ -50,7 +50,7 @@
 .arrow {
     color: white;
     position: absolute;
-    bottom: 0;
+    bottom: 8rem;
     left: 50%;
     margin-left: -20px;
     width: 40px;
