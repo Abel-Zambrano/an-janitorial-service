@@ -1,6 +1,6 @@
 import React from 'react';
 import './Center.css';
-import BouncingArrow from '../../UI/BouncingArrow/BouncingArrow';
+// import BouncingArrow from '../../UI/BouncingArrow/BouncingArrow';
 
 const Center = () => {
     return (
