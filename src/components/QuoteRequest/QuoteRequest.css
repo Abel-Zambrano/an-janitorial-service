@@ -1,0 +1,12 @@
+.QuoteDiv {
+    margin-top: 6rem;
+}
+
+.Quote {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid rgb(255,220,0);
+    margin: 0 20rem;
+    background-color: rgb(255, 234, 0);
+
+}

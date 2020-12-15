@@ -4,6 +4,7 @@ import Center from './components/Center/Center';
 import JanitorialServices from './components/JanitorialServices/JanitorialServices';
 import Footer from './components/Footer/Footer';
 import Logo from './components/Logo/Logo/Logo';
+import QuoteRequest from './components/QuoteRequest/QuoteRequest';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Logo />
       <Header />
       <Center />
+      <QuoteRequest />
       <div className='our-services'>
           <h2>Our Services</h2>
       </div>
