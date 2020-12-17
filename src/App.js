@@ -5,6 +5,7 @@ import JanitorialServices from './components/JanitorialServices/JanitorialServic
 import Footer from './components/Footer/Footer';
 import Logo from './components/Logo/Logo/Logo';
 import QuoteRequest from './components/QuoteRequest/QuoteRequest';
+import Modal from './UI/Modal/Modal';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Center />
       <QuoteRequest />
+      <Modal />
       <div className='our-services'>
           <h2>Our Services</h2>
       </div>
