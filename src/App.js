@@ -17,12 +17,15 @@ function App() {
     setQuote(true);
   }
 
+  const test = console.log('This is working!!');
+  
+
   return (
     <div className="App">
       <Logo />
       <Header />
       <Center />
-      <QuoteRequest />
+      <QuoteRequest clicked={test} />
       <Modal>
         <EmailForm />
       </Modal>
