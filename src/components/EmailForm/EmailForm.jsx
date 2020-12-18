@@ -1,7 +1,7 @@
 import React from 'react';
 import './EmailForm.css';
 
-const EmailForm = () => {
+const EmailForm = (props) => {
     return (
         <div>
             <h2>Quote Request Form</h2>
