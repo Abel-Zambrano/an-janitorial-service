@@ -13,11 +13,11 @@ import EmailForm from './components/EmailForm/EmailForm';
 function App() {
   const [ quote, setQuote ] = useState(false);
   
-  function quoteHandler() {
-    setQuote(true);
-  }
+  const quoteHandler = () => {
+    setQuote(!quote);
+  }  
 
-  const test = console.log('This is working!!');
+  console.log(quote);
   
 
   return (
@@ -25,8 +25,8 @@ function App() {
       <Logo />
       <Header />
       <Center />
-      <QuoteRequest clicked={test} />
-      <Modal>
+      <QuoteRequest clicked={quoteHandler} />
+      <Modal show={quote}>
         <EmailForm />
       </Modal>
       <div className='our-services'>
