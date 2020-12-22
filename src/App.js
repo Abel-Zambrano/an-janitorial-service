@@ -25,10 +25,10 @@ function App() {
       <Logo />
       <Header />
       <Center />
-      <QuoteRequest clicked={quoteHandler} />
-      <Modal show={quote}>
+      <Modal show={quote} clicked={quoteHandler}>
         <EmailForm />
       </Modal>
+      <QuoteRequest clicked={quoteHandler} />
       <div className='our-services'>
           <h2>Our Services</h2>
       </div>
