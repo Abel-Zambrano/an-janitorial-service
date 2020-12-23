@@ -17,10 +17,13 @@
 }
 
 .input {
-    width: 70%;
+    width: 90%;
     height: 40px;
-    border-radius: 5px;
     margin-bottom: 1rem;
+    background: transparent;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
 }
 
 .textarea-field {
@@ -30,9 +33,12 @@
 
 .textarea {
     font-family: inherit;
-    width: 70%;
-    border-radius: 5px;
-    margin-bottom: 1rem;
+    width: 90%;
+    margin-bottom: 3rem;
+    background: transparent;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
 }
 
 .btn-div {
@@ -55,9 +61,21 @@
     border: none;
 }
 
+.danger:hover {
+    color: rgb(216, 44, 44);
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
 .success {
     background-color: rgb(60, 196, 119);
     color: white;
     font-size: 16px;
     border: none;
+}
+
+.success:hover {
+    color: rgb(60, 196, 119);
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.5);
 }
