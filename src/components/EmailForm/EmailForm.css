@@ -1,3 +1,7 @@
+.emailForm-div {
+    letter-spacing: 3px;
+}
+
 .quote-form {
     display: flex;
     flex-direction: column;
@@ -9,7 +13,7 @@
 .input-fields {
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
 }
 
 .input {
@@ -17,4 +21,43 @@
     height: 40px;
     border-radius: 5px;
     margin-bottom: 1rem;
+}
+
+.textarea-field {
+    display: flex;
+    justify-content: center;
+}
+
+.textarea {
+    font-family: inherit;
+    width: 70%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-div button {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5px;
+    font-family: inherit;
+    outline: none;
+}
+
+.danger {
+    background-color: rgb(216, 44, 44);
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+.success {
+    background-color: rgb(60, 196, 119);
+    color: white;
+    font-size: 16px;
+    border: none;
 }
