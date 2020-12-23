@@ -9,6 +9,10 @@ const EmailForm = (props) => {
                 <input type="text" placeholder='Name'/>
                 <input type="text" placeholder='Phone Number' />
                 <input type="email" name="email" id="email" placeholder='Email' />
+                <input type="radio" name="Residential" id=""/>
+                <input type="radio" name="Commercial" id=""/>
+                <button>Cancel</button>
+                <button>Submit</button>
             </form>
         </div>
     );
