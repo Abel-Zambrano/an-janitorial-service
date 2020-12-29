@@ -8,6 +8,13 @@
     border: 2px solid rgb(255,220,0);
     background-color: rgb(255, 234, 0);
     border-radius: 16px;
-    width: 45vw;
+    width: 20rem;
     outline: none;
+}
+
+@media only screen 
+and (min-width: 375px) and (max-width: 700px) {
+    .Quote {
+        width: 16rem;
+    }
 }
