@@ -68,14 +68,14 @@
 }
 
 .success {
-    background-color: rgb(60, 196, 119);
+    background-color: rgb(43, 156, 92);
     color: white;
     font-size: 16px;
     border: none;
 }
 
 .success:hover {
-    color: rgb(60, 196, 119);
+    color: rgb(43, 156, 92);
     background-color: white;
     border: 1px solid rgba(128, 128, 128, 0.5);
 }
