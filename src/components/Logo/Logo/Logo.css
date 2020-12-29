@@ -1,9 +1,10 @@
 .LogoDiv {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .LogoImg {
-    height: 400px;
-    margin: 0;
-    padding: 0;
+    width: 100%;
 }
+
