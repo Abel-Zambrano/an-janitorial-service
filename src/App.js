@@ -26,7 +26,7 @@ function App() {
       <Header />
       <Center />
       <Modal show={quote} clicked={quoteHandler}>
-        <EmailForm />
+        <EmailForm clicked={quoteHandler} />
       </Modal>
       <QuoteRequest clicked={quoteHandler} />
       <div className='our-services'>

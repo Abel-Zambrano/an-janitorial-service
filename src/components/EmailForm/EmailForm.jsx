@@ -15,7 +15,7 @@ const EmailForm = (props) => {
                     <textarea className='textarea' name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
                 </div>
                 <div className="btn-div">
-                    <button className='danger'>CANCEL</button>
+                    <button onClick={props.clicked} className='danger'>CANCEL</button>
                     <button className='success'>SEND</button>
                 </div>
             </form>
