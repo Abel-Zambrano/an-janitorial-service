@@ -13,7 +13,8 @@ import EmailForm from './components/EmailForm/EmailForm';
 function App() {
   const [ quote, setQuote ] = useState(false);
   
-  const quoteHandler = () => {
+  const quoteHandler = (e) => {
+    e.preventDefault();
     setQuote(!quote);
   }  
 
