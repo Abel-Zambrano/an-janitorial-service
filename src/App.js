@@ -8,6 +8,7 @@ import Logo from './components/Logo/Logo/Logo';
 import QuoteRequest from './components/QuoteRequest/QuoteRequest';
 import Modal from './UI/Modal/Modal';
 import EmailForm from './components/EmailForm/EmailForm';
+import emailjs from 'emailjs-com';
 
 
 function App() {
@@ -18,8 +19,17 @@ function App() {
     setQuote(!quote);
   }  
 
-  console.log(quote);
-  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_e4gpc6a', 'template_r4vi4eo', e.target, 'user_9RDGxD4kcKMCjuQ9bdwrE')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  }  
 
   return (
     <div className="App">
@@ -27,7 +37,7 @@ function App() {
       <Header />
       <Center />
       <Modal show={quote} clicked={quoteHandler}>
-        <EmailForm clicked={quoteHandler} />
+        <EmailForm clicked={quoteHandler} submit={sendEmail} />
       </Modal>
       <QuoteRequest clicked={quoteHandler} />
       <div className='our-services'>

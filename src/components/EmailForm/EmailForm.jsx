@@ -5,11 +5,11 @@ const EmailForm = (props) => {
     return (
         <div className='emailForm-div'>
             <h2>Contact us for a Quote!</h2>
-            <form className='quote-form' action="">
+            <form className='quote-form' onSubmit={props.submit}>
                 <div className="input-fields">
-                    <input className='input' type="text" placeholder='Name'/>
-                    <input className='input' type="text" placeholder='Phone Number' />
-                    <input className='input' type="email" name="email" id="email" placeholder='Email' />
+                    <input className='input' type="text" placeholder='Name' name='name' />
+                    <input className='input' type="text" placeholder='Phone Number' name='phone number' />
+                    <input className='input' type="email" placeholder='Email' name="email" />
                 </div>
                 <div className="textarea-field">
                     <textarea className='textarea' name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
