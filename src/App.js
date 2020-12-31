@@ -17,7 +17,12 @@ function App() {
   const quoteHandler = (e) => {
     e.preventDefault();
     setQuote(!quote);
-  }  
+  }
+  
+  const quoteSentHandler = (e) => {
+    e.preventDefault();
+    setQuote(!quote);
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -37,7 +42,7 @@ function App() {
       <Header />
       <Center />
       <Modal show={quote} clicked={quoteHandler}>
-        <EmailForm clicked={quoteHandler} submit={sendEmail} />
+        <EmailForm clicked={quoteHandler} submit={sendEmail} sent={quoteSentHandler} />
       </Modal>
       <QuoteRequest clicked={quoteHandler} />
       <div className='our-services'>

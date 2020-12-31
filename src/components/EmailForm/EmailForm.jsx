@@ -5,7 +5,7 @@ const EmailForm = (props) => {
     return (
         <div className='emailForm-div'>
             <h2>Contact us for a Quote!</h2>
-            <form className='quote-form' onSubmit={props.submit}>
+            <form className='quote-form' onSubmit={props.submit} >
                 <div className="input-fields">
                     <input className='input' type="text" placeholder='Name' name='name' />
                     <input className='input' type="text" placeholder='Phone Number' name='phone number' />
@@ -16,7 +16,7 @@ const EmailForm = (props) => {
                 </div>
                 <div className="btn-div">
                     <button onClick={props.clicked} className='danger'>CANCEL</button>
-                    <button className='success'>SEND</button>
+                    <button onClick={props.sent} className='success'>SEND</button>
                 </div>
             </form>
         </div>
