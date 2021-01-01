@@ -20,7 +20,6 @@ function App() {
   }
   
   const quoteSentHandler = (e) => {
-    e.preventDefault();
     setQuote(!quote);
   }
 
