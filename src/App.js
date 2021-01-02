@@ -14,15 +14,24 @@ import SuccessCheck from './UI/SuccessCheck/SuccessCheck';
 
 function App() {
   const [ quote, setQuote ] = useState(false);
+  const [ success, setSuccess ] = useState(false);
   
   const quoteHandler = (e) => {
     e.preventDefault();
     setQuote(!quote);
+    setSuccess(false);
   }
   
-  const quoteSentHandler = (e) => {
+  const quoteSentHandler = () => {
     setQuote(!quote);
+    setSuccess(!success)
+    console.log('after' + success);
+    
   }
+
+  // const successHandler = () => {
+  //   setSuccess(!success);
+  // }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -34,15 +43,19 @@ function App() {
           console.log(error.text);
       });
       e.target.reset();
-  }  
+  }
+  
+  console.log(success);
+  
 
   return (
     <div className="App">
       <Logo />
       <Header />
       <Center />
-      <Modal show={quote} clicked={quoteHandler}>
-        <EmailForm clicked={quoteHandler} submit={sendEmail} sent={quoteSentHandler} />
+      <Modal show={quote} clicked={quoteHandler} showSuccess={success}>
+        <EmailForm show={quote} clicked={quoteHandler} submit={sendEmail} sent={quoteSentHandler} />
+        <SuccessCheck showSuccess={success} />
       </Modal>
       <QuoteRequest clicked={quoteHandler} />
       <div className='our-services'>
