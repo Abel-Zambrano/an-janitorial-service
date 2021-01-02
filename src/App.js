@@ -9,6 +9,7 @@ import QuoteRequest from './components/QuoteRequest/QuoteRequest';
 import Modal from './UI/Modal/Modal';
 import EmailForm from './components/EmailForm/EmailForm';
 import emailjs from 'emailjs-com';
+import SuccessCheck from './UI/SuccessCheck/SuccessCheck';
 
 
 function App() {
