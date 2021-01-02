@@ -4,6 +4,9 @@ import './EmailForm.css';
 const EmailForm = (props) => {
     return (
         <div className='emailForm-div'>
+            <div className="cancel-btn">
+                <button onClick={props.clicked} className='danger'>X</button>
+            </div>
             <h2>Contact us for a Quote!</h2>
             <form className='quote-form' onSubmit={props.submit} >
                 <div className="input-fields">
@@ -15,7 +18,6 @@ const EmailForm = (props) => {
                     <textarea className='textarea' name="message" cols="30" rows="10" placeholder='Message'></textarea>
                 </div>
                 <div className="btn-div">
-                    <button onClick={props.clicked} className='danger'>CANCEL</button>
                     <button onClick={props.sent} className='success'>SEND</button>
                 </div>
             </form>

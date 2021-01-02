@@ -1,3 +1,8 @@
+.cancel-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .quote-form {
     display: flex;
     flex-direction: column;
@@ -43,7 +48,7 @@
 }
 
 .btn-div button {
-    width: 8rem;
+    width: 75%;
     height: 2rem;
     border-radius: 5px;
     font-family: inherit;
@@ -51,16 +56,15 @@
 }
 
 .danger {
-    background-color: rgb(216, 44, 44);
-    color: white;
-    font-size: 16px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 20px;
     border: none;
+    opacity: 30%;
 }
 
 .danger:hover {
-    color: rgb(216, 44, 44);
-    background-color: white;
-    border: 1px solid rgba(128, 128, 128, 0.5);
+    opacity: 80%;
 }
 
 .success {
