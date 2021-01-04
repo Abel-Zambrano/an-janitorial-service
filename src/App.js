@@ -21,6 +21,7 @@ function App() {
     e.preventDefault();
     setQuote(!quote);
     setSuccess(false);
+    setFormShow(true)
   };
   
   const quoteSentHandler = () => {
@@ -38,6 +39,8 @@ function App() {
           console.log(error.text);
       });
       e.target.reset();
+      setFormShow(false)
+      setSuccess(false)
   }
   
   console.log(success);
