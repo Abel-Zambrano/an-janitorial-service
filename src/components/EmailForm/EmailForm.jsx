@@ -8,7 +8,7 @@ const EmailForm = (props) => {
                 <button onClick={props.clicked} className='danger'>X</button>
             </div>
             <h2>Contact us for a Quote!</h2>
-            <form className='quote-form' onSubmit={props.submit} >
+            <form className='quote-form' onSubmit={props.submit}>
                 <div className="input-fields">
                     <input className='input' type="text" placeholder='Name' name='name' />
                     <input className='input' type="text" placeholder='Phone Number' name='phone number' />
@@ -18,7 +18,7 @@ const EmailForm = (props) => {
                     <textarea className='textarea' name="message" cols="30" rows="10" placeholder='Message'></textarea>
                 </div>
                 <div className="btn-div">
-                    <button onClick={props.sent} className='success'>SEND</button>
+                    <button type='submit' onClick={props.sent} className='success'>SEND</button>
                 </div>
             </form>
         </div>

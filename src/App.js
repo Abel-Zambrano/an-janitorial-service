@@ -15,6 +15,7 @@ import SuccessCheck from './UI/SuccessCheck/SuccessCheck';
 function App() {
   const [ quote, setQuote ] = useState(false);
   const [ success, setSuccess ] = useState(false);
+  const [ formShow, setFormShow ] = useState(true);
   
   const quoteHandler = (e) => {
     e.preventDefault();
@@ -37,7 +38,7 @@ function App() {
           console.log(error.text);
       });
       e.target.reset();
-  };
+  }
   
   console.log(success);
   
@@ -48,7 +49,7 @@ function App() {
       <Header />
       <Center />
       <Modal show={quote} clicked={quoteHandler} showSuccess={success}>
-        {success ? <SuccessCheck /> : <EmailForm show={quote} clicked={quoteHandler} submit={sendEmail} sent={quoteSentHandler} />}
+        { formShow ? <EmailForm show={quote} clicked={quoteHandler} submit={sendEmail} sent={quoteSentHandler} /> : <SuccessCheck />}
       </Modal>
       <QuoteRequest clicked={quoteHandler} />
       <div className='our-services'>
@@ -62,4 +63,4 @@ function App() {
   );
 };
 
-export default App;        
+export default App;     
