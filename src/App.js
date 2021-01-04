@@ -20,18 +20,16 @@ function App() {
     e.preventDefault();
     setQuote(!quote);
     setSuccess(false);
-  }
+  };
   
   const quoteSentHandler = () => {
     setQuote(!quote);
-    // setSuccess(!success)
-    // console.log('after' + success);
-    
-  }
+    setSuccess(!success)
+    console.log('after' + success);    
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('service_e4gpc6a', 'template_r4vi4eo', e.target, 'user_9RDGxD4kcKMCjuQ9bdwrE')
       .then((result) => {
           console.log(result.text);
@@ -39,7 +37,7 @@ function App() {
           console.log(error.text);
       });
       e.target.reset();
-  }
+  };
   
   console.log(success);
   
@@ -49,9 +47,8 @@ function App() {
       <Logo />
       <Header />
       <Center />
-      <Modal show={quote} clicked={quoteHandler}>
-        <EmailForm show={quote} clicked={quoteHandler} submit={sendEmail} sent={quoteSentHandler} />
-        <SuccessCheck />
+      <Modal show={quote} clicked={quoteHandler} showSuccess={success}>
+        {success ? <SuccessCheck /> : <EmailForm show={quote} clicked={quoteHandler} submit={sendEmail} sent={quoteSentHandler} />}
       </Modal>
       <QuoteRequest clicked={quoteHandler} />
       <div className='our-services'>
@@ -63,6 +60,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
-export default App;
+export default App;        

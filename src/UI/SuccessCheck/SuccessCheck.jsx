@@ -3,7 +3,7 @@ import './SuccessCheck.css';
 
 const SuccessCheck = (props) => {
     return(
-    <div>
+    <div className='SuccessCheck'>
       <div className="success-checkmark">
         <div className="check-icon">
           <span className="icon-line line-tip"></span>
