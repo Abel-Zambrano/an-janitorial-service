@@ -3,9 +3,7 @@ import './SuccessCheck.css';
 
 const SuccessCheck = (props) => {
     return(
-    <div style={{
-      opacity: props.showSuccess ? '1' : '0'
-    }} >
+    <div>
       <div className="success-checkmark">
         <div className="check-icon">
           <span className="icon-line line-tip"></span>

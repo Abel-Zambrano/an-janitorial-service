@@ -24,14 +24,10 @@ function App() {
   
   const quoteSentHandler = () => {
     setQuote(!quote);
-    setSuccess(!success)
-    console.log('after' + success);
+    // setSuccess(!success)
+    // console.log('after' + success);
     
   }
-
-  // const successHandler = () => {
-  //   setSuccess(!success);
-  // }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -53,9 +49,9 @@ function App() {
       <Logo />
       <Header />
       <Center />
-      <Modal show={quote} clicked={quoteHandler} showSuccess={success}>
+      <Modal show={quote} clicked={quoteHandler}>
         <EmailForm show={quote} clicked={quoteHandler} submit={sendEmail} sent={quoteSentHandler} />
-        <SuccessCheck showSuccess={success} />
+        <SuccessCheck />
       </Modal>
       <QuoteRequest clicked={quoteHandler} />
       <div className='our-services'>
