@@ -12,6 +12,10 @@
     transition: all 0.3s ease-out;
 }
 
+#final {
+    transition-delay: 2s;
+}
+
 @media only screen 
 and (min-width: 375px) and (max-width: 700px) {
     .Modal {

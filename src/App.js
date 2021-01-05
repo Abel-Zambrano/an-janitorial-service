@@ -16,17 +16,20 @@ function App() {
   const [ quote, setQuote ] = useState(false);
   const [ success, setSuccess ] = useState(false);
   const [ formShow, setFormShow ] = useState(true);
+  const [ final, setFinal ] = useState('');
   
   const quoteHandler = (e) => {
     e.preventDefault();
     setQuote(!quote);
     setSuccess(false);
     setFormShow(true)
+    setFinal('');
   };
   
   const quoteSentHandler = () => {
     setQuote(!quote);
     setSuccess(!success)
+    setFinal('final')
     console.log('after' + success);    
   };
 
@@ -43,15 +46,12 @@ function App() {
       setSuccess(false)
   }
   
-  console.log(success);
-  
-
   return (
     <div className="App">
       <Logo />
       <Header />
       <Center />
-      <Modal show={quote} clicked={quoteHandler} showSuccess={success}>
+      <Modal show={quote} clicked={quoteHandler} final={final}>
         { formShow ? <EmailForm show={quote} clicked={quoteHandler} submit={sendEmail} sent={quoteSentHandler} /> : <SuccessCheck />}
       </Modal>
       <QuoteRequest clicked={quoteHandler} />
