@@ -14,23 +14,19 @@ import SuccessCheck from './UI/SuccessCheck/SuccessCheck';
 
 function App() {
   const [ quote, setQuote ] = useState(false);
-  const [ success, setSuccess ] = useState(false);
   const [ formShow, setFormShow ] = useState(true);
   const [ final, setFinal ] = useState('');
   
   const quoteHandler = (e) => {
     e.preventDefault();
     setQuote(!quote);
-    setSuccess(false);
     setFormShow(true)
     setFinal('');
   };
   
   const quoteSentHandler = () => {
     setQuote(!quote);
-    setSuccess(!success)
     setFinal('final')
-    console.log('after' + success);    
   };
 
   const sendEmail = (e) => {
@@ -43,7 +39,6 @@ function App() {
       });
       e.target.reset();
       setFormShow(false)
-      setSuccess(false)
   }
   
   return (
