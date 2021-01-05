@@ -23,11 +23,6 @@ function App() {
     setFormShow(true)
     setFinal('');
   };
-  
-  const quoteSentHandler = () => {
-    setQuote(!quote);
-    setFinal('final')
-  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -39,6 +34,8 @@ function App() {
       });
       e.target.reset();
       setFormShow(false)
+      setQuote(!quote);
+      setFinal('final')
   }
   
   return (
@@ -47,7 +44,7 @@ function App() {
       <Header />
       <Center />
       <Modal show={quote} clicked={quoteHandler} final={final}>
-        { formShow ? <EmailForm show={quote} clicked={quoteHandler} submit={sendEmail} sent={quoteSentHandler} /> : <SuccessCheck />}
+        { formShow ? <EmailForm show={quote} clicked={quoteHandler} submit={sendEmail} /> : <SuccessCheck />}
       </Modal>
       <QuoteRequest clicked={quoteHandler} />
       <div className='our-services'>
