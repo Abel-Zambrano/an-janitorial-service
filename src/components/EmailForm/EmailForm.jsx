@@ -11,7 +11,7 @@ const EmailForm = (props) => {
             <form className='quote-form' onSubmit={props.submit}>
                 <div className="input-fields">
                     <input className='input' type="text" placeholder='Name' name='name' required/>
-                    <input className='input' type="text" placeholder='Phone Number' name='phone number' required/>
+                    <input className='input' type="tel" placeholder='Phone Number' name='phone number' required/>
                     <input className='input' type="email" placeholder='Email' name='email' />
                 </div>
                 <div className="textarea-field">
