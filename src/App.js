@@ -10,6 +10,7 @@ import Modal from './UI/Modal/Modal';
 import EmailForm from './components/EmailForm/EmailForm';
 import emailjs from 'emailjs-com';
 import SuccessCheck from './UI/SuccessCheck/SuccessCheck';
+import Banner from './components/Banner/Banner';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
   return (
     <div className="App">
       <Logo />
+      <Banner />
       <Header />
       <Center />
       <Modal show={quote} clicked={quoteHandler} final={final}>
