@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import React, { useState } from 'react';
 import Header from './components/Header/Header';
 import Center from './components/Center/Center';
