@@ -39,10 +39,10 @@ function App() {
   return (
     <div className="App">
       <Center />
-      <Modal show={quote} clicked={quoteHandler} final={final}>
+      {/* <Modal show={quote} clicked={quoteHandler} final={final}>
         { formShow ? <EmailForm show={quote} clicked={quoteHandler} submit={sendEmail} /> : <SuccessCheck />}
       </Modal>
-      <QuoteRequest clicked={quoteHandler} />
+      <QuoteRequest clicked={quoteHandler} /> */}
       <div className='our-services'>
           <h2>Our Services</h2>
       </div>

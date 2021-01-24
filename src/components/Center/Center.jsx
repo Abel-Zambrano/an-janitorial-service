@@ -6,7 +6,9 @@ const Center = () => {
     return (
         <div className="Center">
             <div className="Center__background">
-                <Logo className='Center__logo' />
+                <div className="Center__logo-box">
+                    <Logo />
+                </div>
             </div>
         </div>   
     );
