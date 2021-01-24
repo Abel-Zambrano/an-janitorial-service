@@ -39,7 +39,6 @@ function App() {
   
   return (
     <div className="App">
-      <Header />
       <Center />
       <Modal show={quote} clicked={quoteHandler} final={final}>
         { formShow ? <EmailForm show={quote} clicked={quoteHandler} submit={sendEmail} /> : <SuccessCheck />}

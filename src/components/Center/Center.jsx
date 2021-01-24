@@ -1,15 +1,15 @@
 import React from 'react';
-import './Center.css';
-// import BouncingArrow from '../../UI/BouncingArrow/BouncingArrow';
+import './Center.scss';
+import Logo from '../Logo/Logo/Logo';
 
 const Center = () => {
     return (
-        <div>
-            <div className='bg-pic'></div>
-        </div>    
+        <div className="Center">
+            <div className="Center__background">
+                <Logo className='Center__logo' />
+            </div>
+        </div>   
     );
 };
 
 export default Center;
-
-// <img className='bg-pic' src={office} alt="office"/>
