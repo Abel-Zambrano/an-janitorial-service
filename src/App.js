@@ -1,6 +1,5 @@
 import './App.scss';
 import React, { useState } from 'react';
-import Header from './components/Header/Header';
 import Center from './components/Center/Center';
 import JanitorialServices from './components/JanitorialServices/JanitorialServices';
 import Footer from './components/Footer/Footer';
