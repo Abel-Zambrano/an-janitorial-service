@@ -1,14 +1,14 @@
 import './App.scss';
 import React, { useState } from 'react';
-import Header from './components/Header/Header';
-import Center from './components/Center/Center';
-import JanitorialServices from './components/JanitorialServices/JanitorialServices';
-import Footer from './components/Footer/Footer';
-import QuoteRequest from './components/QuoteRequest/QuoteRequest';
-import Modal from './UI/Modal/Modal';
-import EmailForm from './components/EmailForm/EmailForm';
+import Header from '../components/Header/Header';
+import Center from '../components/Center/Center';
+import JanitorialServices from '../components/JanitorialServices/JanitorialServices';
+import Footer from '../components/Footer/Footer';
+import QuoteRequest from '../components/QuoteRequest/QuoteRequest';
+import Modal from '../UI/Modal/Modal';
+import EmailForm from '../components/EmailForm/EmailForm';
 import emailjs from 'emailjs-com';
-import SuccessCheck from './UI/SuccessCheck/SuccessCheck';
+import SuccessCheck from '../UI/SuccessCheck/SuccessCheck';
 
 
 function App() {
