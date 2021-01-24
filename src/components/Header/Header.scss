@@ -1,0 +1,8 @@
+@import '../../index.scss';
+
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorPrimary;
+}
