@@ -1,12 +1,8 @@
 import React from 'react';
-import './Banner.css';
+import './Banner.scss';
 
 const Banner = () => {
-    return (
-        <div className='Banner-div'>
-            <h3>Servicing the San Francisco Bay Area</h3>
-        </div>
-    );
+    return <h3 className='Banner'>Servicing the San Francisco Bay Area</h3>;
 };
 
 export default Banner;

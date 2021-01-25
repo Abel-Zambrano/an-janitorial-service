@@ -10,8 +10,18 @@
     }
 
     &__logo-box {
+        display: block;
         position: absolute;
         top: 0;
         left: -12rem;
+    }
+
+    &__banner-box {
+        position: absolute;
+        top: 20%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex: 0 0 100%;
     }
 }
