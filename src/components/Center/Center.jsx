@@ -11,7 +11,7 @@ const Center = () => {
                     <Logo />
                 </div>
                 <div className="Center__banner-box">
-                    <Banner />
+                    <Banner styleName="Center__banner-text" />
                 </div>
             </div>
         </div>   
