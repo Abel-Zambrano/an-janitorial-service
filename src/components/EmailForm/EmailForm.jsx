@@ -1,5 +1,5 @@
 import React from 'react';
-import './EmailForm.css';
+import './EmailForm.scss';
 
 const EmailForm = (props) => {
     return (

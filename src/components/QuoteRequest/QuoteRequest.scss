@@ -1,0 +1,40 @@
+@import '../../index.scss';
+
+.QuoteRequest {
+    margin-top: 24rem;
+    display: flex;
+    justify-content: center;
+
+    &__button {
+        transition: all .2s;
+        border: 2px solid $colorPrimaryDark;
+        background-color: $colorPrimaryLight;
+        border-radius: 1.6rem;
+        width: 40rem;
+        outline: none;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+        }
+
+        &:active {
+            transform: translateY(-1px);
+            box-shadow: 0 .5rem 10rem rgba(0,0,0, .2);
+        }
+
+        &-text {
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            color: $colorWhite;
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 375px) and (max-width: 700px) {
+    .Quote {
+        width: 16rem;
+    }
+}

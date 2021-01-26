@@ -1,5 +1,5 @@
 import React from 'react';
-import './SuccessCheck.css';
+import './SuccessCheck.scss';
 
 const SuccessCheck = (props) => {
     return(

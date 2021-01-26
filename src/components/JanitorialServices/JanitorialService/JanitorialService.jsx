@@ -1,5 +1,5 @@
 import React from 'react';
-import './JanitorialService.css';
+import './JanitorialService.scss';
 import services from '../../../JS/services';
 import FadeInSection from '../../../UI/FadeInSection/FadeInSection';
 

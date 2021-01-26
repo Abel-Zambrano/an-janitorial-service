@@ -1,5 +1,5 @@
 import React from 'react';
-import './BouncingArrow.css';
+import './BouncingArrow.scss';
 
 function BouncingArrow() {
     return (

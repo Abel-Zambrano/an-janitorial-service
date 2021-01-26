@@ -1,11 +1,11 @@
 import React from 'react';
-import './QuoteRequest.css';
+import './QuoteRequest.scss';
 
 const QuoteRequest = (props) => {
     return (
-        <div className='QuoteDiv'>
-            <button className='btn Quote' onClick={props.clicked}>
-                <h2><i className="fas fa-concierge-bell"></i> Request a Quote</h2>
+        <div className='QuoteRequest'>
+            <button className='QuoteRequest__button' onClick={props.clicked}>
+                <p className='QuoteRequest__button-text'><i className="fas fa-concierge-bell"></i> Request a Quote</p>
             </button>
         </div>
     );
