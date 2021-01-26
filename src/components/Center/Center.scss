@@ -1,5 +1,21 @@
 @import '../../index.scss';
 
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    80% {
+        transform: translateY(.1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .Center {
     position: relative;
     
@@ -27,5 +43,6 @@
 
     &__banner-text {
         font-size: 4rem;
+        animation: moveInBottom 2s ease-out;
     }   
 }
