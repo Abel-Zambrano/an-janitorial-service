@@ -1,13 +1,13 @@
 import './App.scss';
 import React, { useState } from 'react';
 import Center from './components/Center/Center';
-import JanitorialServices from './components/JanitorialServices/JanitorialServices';
 import Footer from './components/Footer/Footer';
 import QuoteRequest from './components/QuoteRequest/QuoteRequest';
 import Modal from './UI/Modal/Modal';
 import EmailForm from './components/EmailForm/EmailForm';
 import emailjs from 'emailjs-com';
 import SuccessCheck from './UI/SuccessCheck/SuccessCheck';
+import ServiceContainer from './components/ServiceContainer/ServiceContainer';
 
 
 function App() {
@@ -39,12 +39,7 @@ function App() {
   return (
     <div className="App">
       <Center />
-      <div className='our-services'>
-          <h2>Our Services</h2>
-      </div>
-      <div className='service-container'>
-        <JanitorialServices />
-      </div>
+      <ServiceContainer />
       <Modal show={quote} clicked={quoteHandler} final={final}>
         { formShow ? <EmailForm show={quote} clicked={quoteHandler} submit={sendEmail} /> : <SuccessCheck />}
       </Modal>
