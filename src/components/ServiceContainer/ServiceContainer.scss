@@ -9,5 +9,9 @@
 
     &__service-type {
         margin-top: 16rem;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10rem;
+        justify-content: space-evenly;
     }
 }
