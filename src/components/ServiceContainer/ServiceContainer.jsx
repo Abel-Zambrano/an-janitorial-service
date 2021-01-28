@@ -1,4 +1,5 @@
 import React from 'react';
+import './ServiceContainer.scss';
 import JanitorialServices from '../JanitorialServices/JanitorialServices';
 
 const ServiceContainer = () => {

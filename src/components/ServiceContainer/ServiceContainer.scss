@@ -1,1 +1,13 @@
 @import '../../index.scss';
+
+.ServiceContainer {
+    margin-top: 16rem;
+
+    &__text {
+        text-transform: uppercase;
+    }
+
+    &__service-type {
+        margin-top: 16rem;
+    }
+}
