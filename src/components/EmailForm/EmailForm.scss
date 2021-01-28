@@ -1,90 +1,76 @@
-.cancel-btn {
-    display: flex;
-    justify-content: flex-end;
-}
+@import '../../index.scss';
 
-.quote-form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 550px;
-    padding: 30px;
-}
+.EmailForm {
 
-.input-fields {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    &__cancel-btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    &__quote {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 550px;
+        padding: 30px;
+    }
+    
+    &__input-fields {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-.input {
-    width: 90%;
-    height: 40px;
-    margin-bottom: 1rem;
-    background: transparent;
-    outline: none;
-    border: 0;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
-}
+        &-input {
+            width: 90%;
+            height: 40px;
+            margin-bottom: 1rem;
+            background: transparent;
+            outline: none;
+            border: 0;
+            border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+        }
 
-.textarea-field {
-    display: flex;
-    justify-content: center;
-}
+        &:invalid {
+            box-shadow: none;
+        }
+    }
+    
+    &__text-area {
+        display: flex;
+        justify-content: center;
 
-.textarea {
-    font-family: inherit;
-    width: 90%;
-    margin-bottom: 3rem;
-    background: transparent;
-    outline: none;
-    border: 0;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
-}
+        &-text {
+            font-family: inherit;
+            font-size: 1.2rem;
+            width: 90%;
+            margin-bottom: 3rem;
+            background: transparent;
+            outline: none;
+            border: 0;
+            border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+        }
+    }
+    
+    &__send-btn {
+        display: flex;
+        justify-content: space-evenly;
 
-.btn-div {
-    display: flex;
-    justify-content: space-evenly;
-}
+        &-success {
+            background-color: $colorPrimaryLight;
+            color: white;
+            font-size: 1.8rem;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            padding: 1rem 10rem;
+            height: 4rem;
+            letter-spacing: .1rem;
 
-.btn-div button {
-    width: 75%;
-    height: 2rem;
-    border-radius: 5px;
-    font-family: inherit;
-    outline: none;
-}
-
-.danger {
-    background-color: whitesmoke;
-    color: black;
-    font-size: 20px;
-    border: none;
-    opacity: 30%;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-.danger:hover {
-    opacity: 80%;
-}
-
-.success {
-    background-color: rgb(43, 156, 92);
-    color: white;
-    font-size: 16px;
-    border: none;
-}
-
-.success:hover {
-    color: rgb(43, 156, 92);
-    background-color: white;
-    border: 1px solid rgba(128, 128, 128, 0.5);
-}
-
-@media only screen 
-and (min-width: 375px) and (max-width: 700px) {
-    .LogoImg {
-        width: 100%;
+            &:hover {
+                background-color: $colorWhite;
+                color: $colorPrimaryLight;
+                border: .1rem solid $colorPrimaryDark;    
+            }
+        }
     }
 }

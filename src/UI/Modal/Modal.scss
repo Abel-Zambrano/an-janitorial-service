@@ -3,10 +3,10 @@
     position: fixed;
     z-index: 500;
     background-color: rgba(255, 255, 255, 0.95);
-    width: 40%;
+    width: 60vw;
     box-shadow: 1px 1px 1px black;
     padding: 16px;
-    left: 30%;
+    left: 20%;
     top: 20%;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
@@ -19,7 +19,7 @@
 @media only screen 
 and (min-width: 375px) and (max-width: 700px) {
     .Modal {
-        width: 90%;
+        width: 90vw;
         padding: 0;
         left: 5%;
         top: 10%;
