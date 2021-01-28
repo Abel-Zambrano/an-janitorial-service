@@ -1,8 +1,17 @@
-.js-list {
-    box-sizing: border-box;
-    width: 200px;
-}
+@import '../../../index.scss';
 
-.service-icon {
-    width: 100px;
+.serviceType {
+    box-sizing: border-box;
+    width: 20rem;
+
+    &__icon {
+        width: 10rem;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        color: $colorBlack;
+        letter-spacing: .1rem;
+        font-weight: 600;
+    }
 }

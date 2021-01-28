@@ -10,9 +10,9 @@ const JanitorialService = () => {
             {services.map((service) => {
                 return (
                     <FadeInSection key={service.id}>
-                        <div className='js-list'>
-                            <img className='service-icon' src={service.img} alt={service.name} />
-                            <p>{service.description}</p>
+                        <div className='serviceType'>
+                            <img className='serviceType__icon' src={service.img} alt={service.name} />
+                            <p className='serviceType__text'>{service.description}</p>
                         </div>
                     </FadeInSection>
                 );
