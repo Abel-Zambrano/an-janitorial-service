@@ -8,6 +8,7 @@ import EmailForm from './components/EmailForm/EmailForm';
 import emailjs from 'emailjs-com';
 import SuccessCheck from './UI/SuccessCheck/SuccessCheck';
 import ServiceContainer from './components/ServiceContainer/ServiceContainer';
+import ContactCard from './components/ContactCard/ContactCard';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         { formShow ? <EmailForm show={quote} clicked={quoteHandler} submit={sendEmail} /> : <SuccessCheck />}
       </Modal>
       <QuoteRequest clicked={quoteHandler} />
+      <ContactCard />
       <Footer />
     </div>
   );
