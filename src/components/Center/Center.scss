@@ -41,6 +41,12 @@
         top: 0;
         left: -12rem;
         animation: moveInLeft 2s ease-out;
+
+        @media screen and (min-width: 375px) and (max-width: 700px) {
+            display: flex;
+            justify-content: center;
+            left: 0;
+        }
     }
 
     &__banner-box {
@@ -53,5 +59,9 @@
     &__banner-text {
         font-size: 4rem;
         animation: moveInBottom 2s ease-out;
+
+        @media screen and (min-width: 375px) and (max-width: 700px) {
+            font-size: 1.6rem;
+        }
     }   
 }
