@@ -28,11 +28,15 @@
     position: relative;
     
     &__background {
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.9)), url('https://live.staticflickr.com/65535/50630796327_6bf58e00a9_k.jpg');
-    // width: 100%;
-    height: 90vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+        background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.9)), url('https://live.staticflickr.com/65535/50630796327_6bf58e00a9_k.jpg');
+        // width: 100%;
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media screen and (min-width: 375px) and (max-width: 700px) {
+        
+        }
     }
 
     &__logo-box {
