@@ -2,6 +2,12 @@
 
 .EmailForm {
 
+    &__contact-text {
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
+
     &__cancel-btn {
         display: flex;
         justify-content: flex-end;
@@ -48,6 +54,21 @@
             outline: none;
             border: 0;
             border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+        }
+    }
+
+    &__cancel-btn{
+        
+        &-x {
+            border: none;
+            background: transparent;
+            font-size: 2rem;
+            font-weight: 100;
+            color: $colorLightGray;
+
+            &:hover {
+                color: $colorBlack;
+            }
         }
     }
     

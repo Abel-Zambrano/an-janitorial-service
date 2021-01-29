@@ -5,9 +5,9 @@ const EmailForm = (props) => {
     return (
         <div className='EmailForm'>
             <div className="EmailForm__cancel-btn">
-                <button onClick={props.clicked} className='danger'>X</button>
+                <button onClick={props.clicked} className='EmailForm__cancel-btn-x'>X</button>
             </div>
-            <h2>Contact us for a Quote!</h2>
+            <h2 className='EmailForm__contact-text'>Contact us for a Quote!</h2>
             <form className='EmailForm__quote' onSubmit={props.submit}>
                 <div className="EmailForm__input-fields">
                     <input className='EmailForm__input-fields-input' type="text" placeholder='Name' name='name' required/>
