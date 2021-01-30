@@ -13,6 +13,11 @@
         border-radius: 1.6rem;
         width: 40rem;
         outline: none;
+    
+        @media only screen 
+        and (min-width: 375px) and (max-width: 700px) {
+            width: 80vw;
+        }
 
         &:hover {
             transform: translateY(-3px);
@@ -30,12 +35,5 @@
             letter-spacing: .2rem;
             color: $colorWhite;
         }
-    }
-}
-
-@media only screen 
-and (min-width: 375px) and (max-width: 700px) {
-    .Quote {
-        width: 16rem;
     }
 }
