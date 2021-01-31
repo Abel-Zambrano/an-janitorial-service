@@ -11,5 +11,3 @@ const GoogleMap = (props) => {
 };
 
 export default GoogleMap;
-
-//API key: AIzaSyBgKFpsyi5UZvC6-N1uzqViQXgJdOWOUEc
