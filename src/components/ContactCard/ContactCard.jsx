@@ -1,5 +1,6 @@
 import React from 'react';
 import './ContactCard.scss';
+import GoogleMap from '../../UI/GoogleMap/GoogleMap';
 
 const ContactCard = () => {
     return (
@@ -10,6 +11,9 @@ const ContactCard = () => {
                 <p className="ContactCard__info-phone-number">
                     <a href="tel:5109135091">(510) 913-5091</a>
                 </p>
+            </div>
+            <div className="map-container">
+                <GoogleMap />
             </div>
         </div>
     );
