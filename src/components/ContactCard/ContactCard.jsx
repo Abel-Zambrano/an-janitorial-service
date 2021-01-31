@@ -13,7 +13,7 @@ const ContactCard = () => {
                 </p>
             </div>
             <div className="map-container">
-                <GoogleMap />
+                <GoogleMap styleName='map' />
             </div>
         </div>
     );
