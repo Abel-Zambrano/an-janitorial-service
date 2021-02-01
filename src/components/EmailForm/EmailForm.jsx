@@ -8,7 +8,7 @@ const EmailForm = (props) => {
                 <button onClick={props.clicked} className='EmailForm__cancel-btn-x'>X</button>
             </div>
             <h2 className='EmailForm__contact-text'>Contact us for a Quote!</h2>
-            <form className='EmailForm__quote' onSubmit={props.submit}>
+            <form className='EmailForm__quote' method='post' onSubmit={props.submit}>
                 <div className="EmailForm__input-fields">
                     <input className='EmailForm__input-fields-input' type="text" placeholder='Name' name='name' required/>
                     <input className='EmailForm__input-fields-input' type="tel" pattern='[0-9]{10}' placeholder='Phone Number' name='phone number' required/>
