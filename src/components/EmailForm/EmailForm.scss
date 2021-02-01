@@ -57,6 +57,20 @@
         }
     }
 
+    &__photo-sample {
+        // margin: 4rem auto;
+        display: flex;
+        justify-content: center;
+
+        &-label {
+            font-family: inherit;
+        }
+
+        &-input {
+            
+        }
+    }
+
     &__cancel-btn{
         
         &-x {
