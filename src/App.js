@@ -26,7 +26,7 @@ function App() {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm('service_e4gpc6a', 'template_r4vi4eo', e.target, 'user_9RDGxD4kcKMCjuQ9bdwrE')
-      .then((result) => {
+      .then((result) => {          
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
