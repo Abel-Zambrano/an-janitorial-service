@@ -17,9 +17,6 @@ const EmailForm = (props) => {
                 <div className="EmailForm__text-area">
                     <textarea className='EmailForm__text-area-text' name="message" cols="30" rows="10" placeholder='Message' required></textarea>
                 </div>
-                <div className="EmailForm__photo-sample">
-                    <input className='EmailForm__photo-sample-upload' type="file" name="photoSample" />
-                </div>
                 <div className="EmailForm__send-btn">
                     <button type='submit' onClick={props.sent} className='EmailForm__send-btn-success'>SEND</button>
                 </div>
