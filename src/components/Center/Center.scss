@@ -26,6 +26,7 @@
 
 .Center {
   position: relative;
+  overflow: hidden;
 
   &__background {
     background-image: linear-gradient(
